@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <title>encryption app</title>
+    <style>
+       
+        #app{
+            width: 100%;
+            max-width: 98%;
+        }
+        #app p{
+            width: 100%;
+            padding: 14px;
+            background: rgb(192, 192, 223);
+            color: rgb(218, 33, 162);
+            border-radius: 5px;
+            text-align: center;
+            font-family: sans-serif;
+        }
+        #app textarea{
+            margin-left: 15px;
+            width: 100%;
+            border: solid 1px rgb(255, 42, 237);
+            outline: none;
+            border-radius: 10px;
+            min-height: 100px;
+        }
+        #app select{
+            margin-left: 15px;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 8px;
+            border: solid 1px rgb(255, 0, 0);
+            outline: none;
+            border-radius:8px ; 
+            font-size: 18px;
+
+        }
+        #app select:hover {
+            border: solid 1px rgb(94, 255, 0);
+
+        }
+        nav{
+            width: 100%;
+            max-width: 97%;
+            background: rgb(20, 71, 240);
+            padding: 20px;
+            border-radius: 4px;
+            font-size: 30px;
+            font-weight: bold;
+            font-family:serif ;
+            text-align: center;
+        }
+        .btn{
+    height: 40px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    background-color: #0e3bce;
+}
+.btn:hover{
+    border: 1px solid  #0e3bce;
+    color: #0e3bce;
+    background-color:white;
+}
+        
+#aboutme{
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+    </style>
+   
+</head>
+<body  >
+    <nav>
+        Encryption App
+        <img src="" alt="">
+    </nav>
+<main id="app">
+    <p>Text - النص </p>
+    <select  id="select">
+        <option  value="encode"> تشفير النص </option>
+        <option value="decode">فك تشفير النص </option>
+
+    </select>
+    <textarea name="" id="text" ></textarea>
+    <p>The-Result - النتيجة </p>
+    <textarea  id="result" ></textarea>
+
+</main>
+<article id="aboutme">
+    <h3> About US</h3>
+    <h3> By Mohammad Alali</h3>
+    <a id="contact" href="mailto: alali5452@gmail.com" > <button class="btn">Contact With US </button></a>
+
+</article>
+
+
+    <script src="enctption.js" > </script>
+
+</body>
+</html>
